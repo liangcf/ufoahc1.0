@@ -1,0 +1,42 @@
+{
+  "name": "liangcf/ufoahc",
+  "description": "work study",
+  "type": "project",
+  "require": {
+    "php": ">=7.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "liangchaofu",
+      "email": "lcfuzj@163.com"
+    }
+  ],
+  "minimum-stability": "beta",
+  "autoload": {
+    "psr-4": {
+      "core\\": "core/",
+      "core\\ufoahc\\": "core/ufoahc/",
+      "core\\ufoahc\\control\\": "core/ufoahc/control/",
+      "core\\ufoahc\\db\\": "core/ufoahc/db/",
+      "core\\ufoahc\\utils\\": "core/ufoahc/utils/",
+      "core\\run\\": "core/run/",
+
+      "app\\src\\indep\\web\\":"app/src/indep/web/",
+      "app\\src\\indep\\web\\controller\\": "app/src/indep/web/controller/",
+      "app\\src\\indep\\service\\": "app/src/indep/web/service/",
+
+      "app\\src\\toge\\db\\":"app/src/toge/db/",
+      "app\\src\\toge\\dao\\":"app/src/toge/dao/",
+      "app\\src\\toge\\utils\\":"app/src/toge/utils/",
+
+      "app\\src\\indep\\admin\\": "app/src/indep/admin/",
+      "app\\src\\indep\\admin\\controller\\":"app/src/indep/admin/controller/",
+      "app\\src\\indep\\admin\\service\\":"app/src/indep/admin/service/",
+
+      "app\\src\\indep\\mobile\\":"app/src/indep/mobile/",
+      "app\\src\\indep\\mobile\\controller\\": "app/src/indep/mobile/controller/",
+      "app\\src\\indep\\mobile\\service\\": "app/src/indep/mobile/service/"
+    }
+  }
+}

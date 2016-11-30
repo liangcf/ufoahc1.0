@@ -1,0 +1,68 @@
+#取消不需要上传文件
+
+###########################
+#测试
+###########################
+config/run.config.php
+
+###########################
+#附加日志等
+###########################
+var/systemlog/*
+!var/systemlog/readme.md
+var/logs/*
+!var/logs/readme.md
+var/cache/*
+!var/cache/readme.md
+
+
+###########################
+#shell 日志路径
+###########################
+shell/logs/*
+!shell/logs/readme.md
+
+###########################
+# PhpStorm
+###########################
+.idea/*
+
+###########################
+# Eclipse
+###########################
+.buildpath
+.project
+.metadata
+*.bak
+.classpath
+.settings/*
+
+###########################
+# Composer
+###########################
+vendor/composer/*
+vendor/autoload.php
+
+###########################
+# Windows Files
+###########################
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+###########################
+# Sublime Text
+###########################
+*.sublime-project
+*.sublime-workspace
+
+###########################
+# Netbeans
+###########################
+nbproject/*

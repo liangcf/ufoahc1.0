@@ -1,0 +1,44 @@
+<h1>这里是中间操作区域</h1>
+<h1>页面取值方式 $this->data['返回的键值']或者$data['返回的键值']</h1>
+加载css的方式：$this->appendCss('/css/web/test.css');
+<?php
+$this->appendCss('/css/web/test.css');
+$this->appendCss('/css/web/test2.css');
+?>
+<div class="test">
+    <p class="font-da">
+        样式输出成功1
+    </p>
+</div>
+<img src="/img/qr.jpg">
+<div class="test2">
+    <p class="font-da2">
+        样式输出成功2
+        <?php
+        print_r($this);
+        ?>
+    </p>
+</div>
+<div class="test3">
+    <p>这是第三个样式 输出</p>
+</div>
+<?php
+/*页面取值方式1*/
+//print_r($this->data);
+//echo '<hr>';
+/*页面取值方式2*/
+//print_r($data);
+//echo '<hr>';
+?>
+加载js的方式：$this->appendJs('/js/web/test2.js');
+<?php
+$this->appendJs('/js/web/test2.js');
+$this->appendJs('/js/web/test.js');
+?>
+
+<script>
+    $(function(){
+        test();
+//        test2();
+    })
+</script>
